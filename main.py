@@ -25,10 +25,14 @@ def generate_response(prompt):
 
 def main():
     # Example usage
-    prompt = input("Enter a prompt: ")
-    response = generate_response(prompt)
-    print(f"Prompt: {prompt}")
-    print(f"Response: {response}")
+    while True:
+        prompt = input("Enter a prompt: ")
+        if prompt.lower() == "exit":
+            print("Exiting...")
+            break
+        response = generate_response(prompt)
+        print(f"Prompt: {prompt}")
+        print(f"Response: {response}")
 
 if __name__ == "__main__":
     main()
