@@ -31,6 +31,7 @@ def main():
             print("Exiting...")
             break
         response = generate_response(prompt)
+        print("\n"*2)
         print(f"Prompt: {prompt}")
         print(f"Response: {response}")
 
