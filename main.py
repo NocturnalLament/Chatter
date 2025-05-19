@@ -24,13 +24,19 @@ def generate_response(prompt):
     return response.text
 
 def main():
-    # Example usage
+    # Main loop
     while True:
+        # Get user input
         prompt = input("Enter a prompt: ")
+    
         if prompt.lower() == "exit":
             print("Exiting...")
             break
+        
+        # Generate response
         response = generate_response(prompt)
+        
+        # Print the response
         print("\n"*2)
         print(f"Prompt: {prompt}")
         print(f"Response: {response}")
